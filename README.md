@@ -26,7 +26,8 @@ path接收绝对路径跳转到桌面
 ![image](https://github.com/user-attachments/assets/5d6f6a38-3dfe-4f13-9a7b-268c99ee2d4c)
 
 执行命令
-![image](https://github.com/user-attachments/assets/794da0a3-b6dd-4c25-bd05-195537ab6a34)
+![image](https://github.com/user-attachments/assets/3e160264-df79-4f9a-a475-25ec377e242b)
+
 
 仅供学习,切勿用于非法用途,造成的违法行为与本人无关。
 
