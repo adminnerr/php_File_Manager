@@ -28,7 +28,8 @@ path接收绝对路径跳转到桌面
 执行命令
 ![image](https://github.com/user-attachments/assets/794da0a3-b6dd-4c25-bd05-195537ab6a34)
 
-仅供学习,切勿用于非法用途
+仅供学习,切勿用于非法用途,造成的违法行为与本人无关。
+
 
 
 
