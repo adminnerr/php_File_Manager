@@ -37,6 +37,15 @@ path接收绝对路径跳转到桌面
 
 ![image](https://github.com/user-attachments/assets/71526185-5aef-4812-99dc-6a710b2d1a81)
 
+## 404.php页面/功能展示
+
+![image](https://github.com/user-attachments/assets/8515865f-2a9a-4224-b276-11952eac0400)
+
+get传参username和password，进入后台
+![image](https://github.com/user-attachments/assets/636f7534-9071-45e6-b2bb-22a3e1c74221)
+
+![image](https://github.com/user-attachments/assets/5e178924-ea27-40bf-b61b-fb39ca9ed78b)
+
 
 仅供学习,切勿用于非法用途,造成的违法行为与本人无关。
 
