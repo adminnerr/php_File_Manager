@@ -1,5 +1,7 @@
 # php_File_Manager
 
+## shell-pro.php页面功能展示
+
 ![image](https://github.com/user-attachments/assets/4de4b095-a93f-47f8-a5ea-09e0af5dd17a)
 
 默认密码：admin@123
@@ -27,6 +29,13 @@ path接收绝对路径跳转到桌面
 
 执行命令
 ![image](https://github.com/user-attachments/assets/3e160264-df79-4f9a-a475-25ec377e242b)
+
+## shell5.php页面/功能展示
+![image](https://github.com/user-attachments/assets/6e897130-e5f8-4969-b1c6-396673139f34)
+
+![image](https://github.com/user-attachments/assets/f8decf41-5688-4107-8881-b181477d9778)
+
+![image](https://github.com/user-attachments/assets/71526185-5aef-4812-99dc-6a710b2d1a81)
 
 
 仅供学习,切勿用于非法用途,造成的违法行为与本人无关。
